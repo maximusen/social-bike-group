@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Bike Group</title>
+</head>
+<body>
+    
+    <figure>
+        <fieldset>
+    <legend>
+        <h1>Соціальне опитування велосипедистів</h1>
+    </legend>
+    
+    <form method="POST" action="https://formspree.io/simon.ms777@gmail.com">
+        <br>
+        <label><b>Ім'я</b>
+            <input id="name" type="name" name="name">
+        </label>
+        <br>
+        <br>
+        <label><b>Телефон</b>
+            <input id="tel" type="tel" name="phone">
+        </label>
+        <br>
+        <h4>Виберіть тип велосипеду, яким ви користуєтесь</h4>
+        <select name="bike">
+            <option value="hardtail"selected>Хардтейл</option>
+            <option value="fullsuspecion">Двохпідвіс</option>
+            <option value="road">Шосейний</option>
+            <option value="city">Міський</option>
+        </select>
+        <br>
+        <h4>Виберіть максимальну відстань, яку ви долали на велосипеді</h4>
+        <br>
+        <input type="radio" name="km" value="30km" checked> 30 - 50км.<br>
+        <input type="radio" name="km" value="50km"> 50 - 100км.<br>
+        <input type="radio" name="km" value="100km"> більше 100км.<br>
+        <br>
+        <h4>Виберіть тип покриття по якому ви катаєтесь</h4>
+        <br>
+        <label>
+          <input type="checkbox" name="status"> Асфальт
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="status"> Грунт
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="status"> Гравій
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="status"> Пісок
+        </label>
+        <br>
+        <h4>Оцініть свої навички катання на велосипеді</h4>
+         0
+          <input type="range" id="a" name="a" value="50">
+         10
+        <br>
+        <br>
+        <input type="submit" value="Відправити">
+        <br>
+    </form>
+         </fieldset>
+    </figure>
+    
+</body>
+</html>
